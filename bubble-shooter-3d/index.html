@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Shooter 3D</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="ui">
+        <div id="scoreboard">
+            <span id="score">Score: 0</span>
+            <span id="shots">Shots: 50</span>
+            <span id="highscore">Highscore: 0</span>
+        </div>
+        <button id="pauseBtn">Pause</button>
+        <button id="fullscreenBtn">Fullscreen</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <div id="gameOver" class="hidden">
+        <h2>Game Over</h2>
+        <p id="finalScore"></p>
+        <button id="restartBtn">Restart</button>
+    </div>
+    <script src="js/physics.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

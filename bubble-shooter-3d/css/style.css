@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+#gameCanvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+#ui {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+#scoreboard span {
+    margin-right: 10px;
+}
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
